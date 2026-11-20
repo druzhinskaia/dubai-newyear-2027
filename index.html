@@ -8,7 +8,12 @@
   <title>Дубай · Новый год 2027</title>
   <link rel="preload" as="image" href="assets/hero.webp">
   <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="assets/map/leaflet.css">
+  <link rel="stylesheet" href="assets/map/MarkerCluster.css">
   <link rel="stylesheet" href="style.css">
+  <script src="assets/map/leaflet.js" defer></script>
+  <script src="assets/map/leaflet.markercluster.js" defer></script>
+  <script src="hotel-map.js" defer></script>
   <script src="catalog.js" defer></script>
 </head>
 <body>
@@ -79,6 +84,25 @@
         </div>
         <p>Все цены за двоих с перелётом из Москвы. Большинство туров — с 26 декабря по 1 января. Условия ужина 31 декабря смотрите отдельно.</p>
       </div>
+      <section class="hotel-map-section" aria-labelledby="hotel-map-heading">
+        <div class="hotel-map-heading">
+          <div>
+            <h3 id="hotel-map-heading">Где находятся отели</h3>
+            <p>Выберите отель или нажмите на точку. Крупные метки показывают группы отелей рядом.</p>
+          </div>
+          <span id="map-status" role="status"></span>
+        </div>
+        <div id="hotel-map" aria-label="Карта расположения отелей в Дубае"></div>
+        <p id="map-unavailable" hidden>Выберите отель в списке, чтобы перейти к карточке.</p>
+        <div class="hotel-map-controls">
+          <label class="sort-wrap">
+            <span class="sr-only">Отель на карте</span>
+            <select id="map-hotel-select"><option value="">Выбрать отель</option></select>
+          </label>
+          <button class="button outlined" id="map-overview" type="button">Общий план</button>
+        </div>
+      </section>
+      <p class="meal-caption">В карточках указано обычное расписание питания, время местное. <a class="text-link" href="#dinner">Условия ужина 31 декабря</a> смотрите отдельно.</p>
       <div class="filter-row" aria-label="Фильтры и сортировка">
         <div class="filter-buttons" role="group" aria-label="Питание">
           <button type="button" data-meal="all" aria-pressed="true">Все</button>

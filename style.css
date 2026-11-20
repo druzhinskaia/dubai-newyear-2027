@@ -243,3 +243,37 @@ section[id] { scroll-margin-top: 1rem; }
   .activity-callout img { height: auto; min-height: 0; aspect-ratio: 1.7; }
   .activity-callout div { padding: 0 1.1rem 1.4rem; }
 }
+
+.hotel-map-section { margin: 0 0 1.4rem; padding: 1.25rem; background: var(--cream); border: 1px solid var(--line); }
+.hotel-map-heading { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem 1rem; margin-bottom: .8rem; }
+.hotel-map-heading h3 { font: 600 clamp(1.85rem, 3.1vw, 2.6rem)/1 var(--display); margin-bottom: .3rem; }
+.hotel-map-heading p, .hotel-map-heading > span, .meal-caption { color: var(--muted); font-size: .875rem; }
+.hotel-map-heading > span { flex-shrink: 0; font-weight: 700; }
+#hotel-map { isolation: isolate; height: clamp(16rem, 32vw, 22rem); background: #dedad1; }
+.hotel-map-controls { display: flex; flex-wrap: wrap; gap: .55rem; align-items: stretch; margin-top: .8rem; }
+.hotel-map-controls .sort-wrap { flex: 1 1 13rem; max-width: 22rem; min-width: 0; }
+.hotel-map-controls select { width: 100%; min-height: 2.85rem; text-overflow: ellipsis; }
+.hotel-map-controls .button { min-height: 2.85rem; padding-block: .45rem; }
+.hotel-map-controls .button:disabled { opacity: .5; cursor: default; }
+.hotel-map-pin, .hotel-map-cluster { display: grid; place-items: center; border-radius: 50%; border: 2px solid #fff6e9; box-shadow: 0 1px 5px #2b211560; color: #fffdf9; background: #593827; font: 750 11px/1 var(--body); }
+.hotel-map-cluster { background: #9a5d38; font-size: 13px; outline: 1px solid #9a5d3880; }
+.map-popup { display: grid; gap: .15rem; color: var(--ink); font: 500 .84rem/1.35 var(--body); }
+.map-popup > span { color: var(--muted); }
+.map-popup > div { display: flex; flex-wrap: wrap; gap: .3rem .75rem; margin-top: .3rem; }
+.map-popup a { font-weight: 750; text-underline-offset: .2em; color: #67412c; }
+.meal-caption { margin-bottom: .9rem; }
+.hotel[id] { scroll-margin-top: 1.1rem; }
+.hotel-meals { padding: .55rem .6rem; margin: 0 0 .15rem; background: #ede3d6; color: var(--ink); font-size: .84rem; line-height: 1.4; }
+.hotel-meals dl { margin: 0; }
+.hotel-meals-sources { display: flex; flex-wrap: wrap; gap: .15rem .55rem; }
+.hotel-meals-row { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.35fr); gap: .12rem .3rem; }
+.hotel-meals-row + .hotel-meals-row { margin-top: .3rem; }
+.hotel-meals-row dt { color: var(--muted); }
+.hotel-meals-row dd { margin: 0; font-weight: 720; }
+.hotel-meals-note { display: block; color: var(--muted); margin-top: .33rem; font-size: .79rem; }
+.hotel-meals a { display: inline-block; margin-top: .22rem; font-size: .79rem; }
+@media (max-width: 48rem) {
+  .hotel-map-section { padding: .82rem; }
+  .hotel-map-heading { align-items: start; }
+  .hotel-meals-row { grid-template-columns: 1fr; gap: .07rem; }
+}
