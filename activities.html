@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eee3">
+  <meta name="description" content="Дайвинг, прогулки на верблюдах, сафари и другие развлечения в Дубае. Цены за двоих и ссылки на бронирование.">
+  <title>Развлечения · Dubai 2027</title>
+  <link rel="preload" href="assets/activity-kamels.webp" as="image">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="activities.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#activities">К развлечениям</a>
+  <div class="travel-bar"><span>Москва · Дубай</span><span>Новый год 2027</span><span>Для двоих</span></div>
+  <header class="nav frame" id="top">
+    <a class="brand" href="./" aria-label="Dubai 2027, главная">Dubai<span>2027</span></a>
+    <nav aria-label="Разделы">
+      <a href="./#tours">Туры</a>
+      <a href="./#dinner" aria-label="Ужин 31 декабря">Ужин<span class="nav-dinner-date"> 31 декабря</span></a>
+      <a href="./#events">Афиша</a>
+      <a href="activities.html" aria-current="page">Развлечения</a>
+    </nav>
+    <span class="nav-date">26.12 — 02.01</span>
+  </header>
+  <main>
+    <section class="activity-hero">
+      <div class="frame activity-hero-inner">
+        <div>
+          <p class="eyebrow">Дубай и окрестности</p>
+          <h1>От моря<br>до дюн</h1>
+          <p>Первое погружение, прогулка на верблюдах и другие активные варианты для двоих.</p>
+          <a class="button dark" href="#activities">Смотреть развлечения</a>
+        </div>
+        <img src="assets/activity-kamels.webp" width="1200" height="760" alt="Верблюды в пустыне Дубая" fetchpriority="high">
+      </div>
+    </section>
+    <section class="frame section-space" id="activities" aria-labelledby="activity-title">
+      <div class="section-intro">
+        <div><p class="eyebrow">Цены на 21 ноября 2026</p><h2 id="activity-title">Развлечения</h2></div>
+        <p>Цены и форматы по данным организаторов и билетных площадок. Стоимость и доступность на новогодние даты смотрите перед бронированием.</p>
+      </div>
+      <div class="filter-row">
+        <div class="filter-buttons" id="activity-filters" role="group" aria-label="Тип развлечения">
+          <button type="button" data-activity-filter="all" aria-pressed="true">Все</button>
+          <button type="button" data-activity-filter="dive" aria-pressed="false">Дайвинг</button>
+          <button type="button" data-activity-filter="desert" aria-pressed="false">Пустыня</button>
+          <button type="button" data-activity-filter="water" aria-pressed="false">На воде</button>
+          <button type="button" data-activity-filter="sky" aria-pressed="false">На высоте</button>
+        </div>
+      </div>
+      <p class="activity-count" id="activity-count" role="status">8 вариантов</p>
+      <div class="activity-grid">
+        <article class="activity-card" data-activity="dive">
+          <img src="assets/activity-jumeirah.webp" alt="Знакомство с дайвингом Al Boom Diving" width="880" height="620" loading="lazy">
+          <p class="eyebrow">Дайвинг · Джумейра</p>
+          <h3>Первое погружение в море</h3>
+          <p>Al Boom Diving. Начнёте в бассейне с инструктором, затем — погружение у Jumeirah Beach. Программа для новичков.</p>
+          <div class="activity-price"><strong>от 399 AED с человека</strong><span>≈17 900 ₽ за двоих · ориентир агрегатора</span></div>
+          <a class="button outlined" href="https://travel.padi.com/dive-course/dubai/padi-discover-scuba-diving-en-dubai-52789/" target="_blank" rel="noopener noreferrer">Посмотреть даты на PADI</a>
+          <a class="text-link activity-source" href="https://www.coralcircuit.com/courses/padi-discover-scuba-diving-dubai-1-pool-1-sea-dive-al-boom-diving" target="_blank" rel="noopener noreferrer">Источник цены</a>
+        </article>
+        <article class="activity-card" data-activity="desert">
+          <img src="assets/activity-dunes.webp" alt="Сэндбординг на песчаных дюнах Дубая" width="880" height="620" loading="lazy">
+          <p class="eyebrow">Пустыня · около 4 часов</p>
+          <h3>Красные дюны и верблюды</h3>
+          <p>Сафари OceanAir на внедорожнике, сэндбординг и короткая прогулка на верблюде. Трансфер включён. Квадроцикл добавляется при выборе тарифа.</p>
+          <div class="activity-price"><strong>от 127,80 AED с человека</strong><span>≈5 700 ₽ за двоих · базовый вариант</span></div>
+          <a class="button outlined" href="https://oceanairtravels.com/en/experiences/morning-dubai-dune-bashing-safari-and-camel" target="_blank" rel="noopener noreferrer">Выбрать сафари</a>
+        </article>
+        <article class="activity-card" data-activity="desert">
+          <img src="assets/activity-kamels.webp" alt="Караван на закате в пустыне Дубая" width="880" height="620" loading="lazy">
+          <p class="eyebrow">Пустыня · с ужином</p>
+          <h3>На верблюдах на закате</h3>
+          <p>У Platinum Heritage верховая часть длится около 45 минут. После прогулки — вечер в лагере с ужином. В программе указан трансфер из отелей Дубая.</p>
+          <div class="activity-price"><strong>795 AED с человека</strong><span>≈35 600 ₽ за двоих</span></div>
+          <a class="button outlined" href="https://uae.platinum-heritage.com/camel-desert-safari" target="_blank" rel="noopener noreferrer">Выбрать прогулку</a>
+        </article>
+        <article class="activity-card" data-activity="water">
+          <img src="assets/activity-hatta.webp" alt="Каяки на водохранилище Хатта среди гор" width="880" height="620" loading="lazy">
+          <p class="eyebrow">На воде · Хатта</p>
+          <h3>Каяк среди гор</h3>
+          <p>Двухместный каяк на водохранилище Хатта. По тарифу проката время катания не ограничено. Дорога из Дубая занимает около полутора часов, транспорт оплачивается отдельно.</p>
+          <div class="activity-price"><strong>150 AED за двухместный каяк</strong><span>≈3 360 ₽ за двоих</span></div>
+          <a class="button outlined" href="https://hattakayak.com/our-boats" target="_blank" rel="noopener noreferrer">Посмотреть прокат</a>
+        </article>
+        <article class="activity-card" data-activity="water">
+          <img src="assets/activity-jetski.webp" alt="Гидроцикл рядом с Бурдж-аль-Араб" width="880" height="620" loading="lazy">
+          <p class="eyebrow">На воде · 30 минут</p>
+          <h3>Гидроцикл у Бурдж-аль-Араб</h3>
+          <p>Маршрут Nemo Watersports вдоль побережья с инструктором. По условиям оператора можно ехать вдвоём на одном гидроцикле за ту же цену.</p>
+          <div class="activity-price"><strong>299 AED за гидроцикл</strong><span>≈6 690 ₽ за двоих на одном</span></div>
+          <a class="button outlined" href="https://experiences.visitdubai.com/productDetail/57728" target="_blank" rel="noopener noreferrer">Выбрать время</a>
+        </article>
+        <article class="activity-card" data-activity="sky">
+          <img src="assets/activity-xline.webp" alt="Зиплайн XLine над Dubai Marina" width="880" height="620" loading="lazy">
+          <p class="eyebrow">На высоте · Dubai Marina</p>
+          <h3>Зиплайн над Мариной</h3>
+          <p>Спуск над небоскрёбами и яхтами с XLine. Оператор указывает, что фото и видео включены в стандартный билет. Условия по росту и весу есть на странице XDubai.</p>
+          <div class="activity-price"><strong>699 AED с человека</strong><span>≈31 300 ₽ за двоих</span></div>
+          <a class="button outlined" href="https://www.xdubai.com/x-line" target="_blank" rel="noopener noreferrer">Посмотреть слоты</a>
+        </article>
+        <article class="activity-card" data-activity="dive">
+          <img src="assets/activity-sunken.webp" alt="Декорации затопленного города в Deep Dive Dubai" width="880" height="620" loading="lazy">
+          <p class="eyebrow">Под водой · Deep Dive Dubai</p>
+          <h3>Прогулка в затопленном городе</h3>
+          <p>Sunken City Walk — прогулка с гидом по площадке под водой в полнолицевой маске. Оператор указывает, что сертификат дайвера и навыки плавания не требуются.</p>
+          <div class="activity-price"><strong>600 AED с человека</strong><span>≈26 860 ₽ за двоих</span></div>
+          <a class="button outlined" href="https://experiences.visitdubai.com/productDetail/101950?lang=en" target="_blank" rel="noopener noreferrer">Выбрать прогулку</a>
+        </article>
+        <article class="activity-card" data-activity="dive">
+          <img src="assets/activity-scuba.webp" alt="Дайверы в затопленном городе Deep Dive Dubai" width="880" height="620" loading="lazy">
+          <p class="eyebrow">Дайвинг · Deep Dive Dubai</p>
+          <h3>Дайвинг в затопленном городе</h3>
+          <p>Discover Scuba Dive с инструктором, снаряжением и погружением до 12 метров в бассейне с подводными декорациями. Есть тариф для новичков.</p>
+          <div class="activity-price"><strong>1 800 AED с человека</strong><span>≈80 570 ₽ за двоих</span></div>
+          <a class="button outlined" href="https://www.deepdivedubai.com/experience/scuba-diving/non-certified-scuba-divers" target="_blank" rel="noopener noreferrer">Выбрать погружение</a>
+        </article>
+      </div>
+      <aside class="return-note activity-notes" aria-label="Планирование">
+        <div><h3>Дайвинг в начале поездки</h3><p>Планируйте погружение с запасом до обратного рейса. Интервал зависит от программы, поэтому его стоит уточнить у дайв-центра до бронирования.</p><a class="text-link" href="https://world.dan.org/health-medicine/health-resource/health-safety-guidelines/guidelines-for-flying-after-diving/" target="_blank" rel="noopener noreferrer">Рекомендации DAN</a></div>
+        <div><h3>Вариант на двоих до 10 000 ₽</h3><p>Короткое сафари с верблюдами плюс каяк в Хатте — примерно 9 100 ₽ на двоих по указанным ценам, дорога в Хатту отдельно.</p></div>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="frame">
+      <div class="footer-top"><a href="./" class="brand">Dubai<span>2027</span></a><a class="text-link" href="#top">Наверх</a></div>
+      <p>Опубликованные тарифы сверены 21 ноября 2026. Суммы в рублях примерные, по <a href="https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&amp;UniDbQuery.To=21.11.2026" target="_blank" rel="noopener noreferrer">курсу ЦБ</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
