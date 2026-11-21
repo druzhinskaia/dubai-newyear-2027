@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="assets/map/leaflet.css">
   <link rel="stylesheet" href="assets/map/MarkerCluster.css">
-  <link rel="stylesheet" href="style.css?v=20261121">
+  <link rel="stylesheet" href="style.css?v=20261121-2">
   <script src="assets/map/leaflet.js" defer></script>
   <script src="assets/map/leaflet.markercluster.js" defer></script>
   <script src="hotel-map.js?v=20261121" defer></script>
-  <script src="catalog.js" defer></script>
+  <script src="hotel-album.js?v=20261121-2" defer></script>
+  <script src="catalog.js?v=20261121-2" defer></script>
 </head>
 <body>
   <a class="skip" href="#tours">К списку туров</a>
@@ -43,7 +44,7 @@
         <div class="hero-copy">
           <p class="eyebrow">26 декабря — 2 января</p>
           <h1>Новый год<br>в Дубае</h1>
-          <p>Туры на двоих из Москвы.<br>С завтраками — от <strong>111 420 ₽</strong>.</p>
+          <p>На двоих из Москвы · двухразовое питание.<br>Проверенные туры — от <strong>155 103 ₽</strong>.</p>
           <a class="button dark" href="#tours">Смотреть туры</a>
         </div>
         <span class="photo-location">Downtown Dubai</span>
@@ -52,8 +53,8 @@
 
     <nav class="edit-strip" aria-label="Быстрые ссылки">
       <div class="frame edit-list">
-        <a href="#tours" data-shortcut="all"><img src="assets/studio.webp" alt="" width="100" height="114"><span><strong>Туры<br><span class="no-wrap">до 150 000 ₽</span></strong><small>Смотреть</small></span></a>
-        <a href="#tours" data-shortcut="half"><img src="assets/rigga.webp" alt="" width="100" height="114"><span><strong>Двухразовое<br>питание</strong><small>Сравнить</small></span></a>
+        <a href="#tours" data-shortcut="budget"><img src="assets/studio.webp" alt="" width="100" height="114"><span><strong>Туры<br><span class="no-wrap">до 150 000 ₽</span></strong><small>Смотреть</small></span></a>
+        <a href="#tours" data-shortcut="all"><img src="assets/rigga.webp" alt="" width="100" height="114"><span><strong>Двухразовое<br>питание</strong><small>Сравнить</small></span></a>
         <a href="#dinner"><img src="assets/dining.webp" alt="" width="100" height="114"><span><strong>Ужин<br>31 декабря</strong><small>Узнать цены</small></span></a>
         <a href="#events"><img src="assets/night.webp" alt="" width="100" height="114"><span><strong>Шоу<br>и концерты</strong><small>Открыть афишу</small></span></a>
       </div>
@@ -62,16 +63,16 @@
     <section class="feature" aria-labelledby="feature-title">
       <div class="feature-inner frame">
         <div class="feature-copy">
-          <p class="eyebrow">Выбор по питанию</p>
-          <h2 id="feature-title">Studio M<br>Arabian Plaza</h2>
-          <p>Шесть ночей в Дейре, рядом с метро. Прямой перелёт, багаж 23 кг на человека, групповой трансфер и страховка в проверенных тарифах.</p>
-          <div class="feature-price"><strong>124 260 ₽</strong><span>за двоих · двухразовое питание</span></div>
-          <a class="button dark" href="https://www.onlinetours.ru/book/298db66fdb79c5d1f3624b96ef231dd8" target="_blank" rel="noopener noreferrer">Открыть тур</a>
-          <a class="text-link" href="https://www.onlinetours.ru/book/bf90044d77c820484aedbf19ea2a3461" target="_blank" rel="noopener noreferrer">Трёхразовое · 137 099 ₽</a>
+          <p class="eyebrow">Ваш фаворит · World Trade Centre</p>
+          <h2 id="feature-title">ibis One Central</h2>
+          <p>Перелёт из Москвы 26 декабря, вылет из Дубая 2 января. Стандартный номер с двухразовым питанием.</p>
+          <div class="feature-price"><strong>179 962 ₽</strong><span>за двоих · проверено в деталях тура</span></div>
+          <a class="button dark" href="https://www.onlinetours.ru/book/97a162e1538c0cdecabc11cf43f3ccc4" target="_blank" rel="noopener noreferrer">Открыть тур</a>
+          <a class="text-link" href="#hotel-central">Фото и категории номеров</a>
         </div>
         <figure class="feature-photo">
-          <img src="assets/studio.webp" alt="Бассейн отеля Studio M Arabian Plaza" width="900" height="675" loading="lazy">
-          <figcaption>Studio M Arabian Plaza · Дейра</figcaption>
+          <img src="assets/central.webp" alt="Интерьер ibis One Central" width="900" height="675" loading="lazy">
+          <figcaption>ibis One Central · World Trade Centre</figcaption>
         </figure>
       </div>
     </section>
@@ -82,8 +83,9 @@
           <p class="eyebrow">Цены на 21 ноября 2026</p>
           <h2 id="catalog-title">Туры в Дубай</h2>
         </div>
-        <p>Все цены за двоих с перелётом из Москвы. Большинство туров — с 26 декабря по 1 января. Условия ужина 31 декабря смотрите отдельно.</p>
+        <p>Вылет из Москвы 26 декабря, обратно 2 января. Двухразовое питание и цены за двоих. У самых дешёвых рейсов прилёт в ОАЭ 27 декабря.</p>
       </div>
+      <p class="price-note"><strong>До 150 000 ₽ пока ничего не подтвердилось.</strong> Ближайший вариант — Comfort Inn за 155 103 ₽. Цены ниже сверены на страницах конкретных туров.</p>
       <section class="hotel-map-section" aria-labelledby="hotel-map-heading">
         <div class="hotel-map-heading">
           <div>
@@ -105,28 +107,22 @@
       </section>
       <p class="meal-caption">В карточках указано обычное расписание питания, время местное. <a class="text-link" href="#dinner">Условия ужина 31 декабря</a> смотрите отдельно.</p>
       <div class="filter-row" aria-label="Фильтры и сортировка">
-        <div class="filter-buttons" role="group" aria-label="Питание">
-          <button type="button" data-meal="all" aria-pressed="true">Все</button>
-          <button type="button" data-meal="breakfast" aria-pressed="false">Завтраки</button>
-          <button type="button" data-meal="half" aria-pressed="false">Двухразовое</button>
-          <button type="button" data-meal="full" aria-pressed="false">Трёхразовое</button>
+        <div class="filter-buttons" role="group" aria-label="Показывать отели">
+          <button type="button" id="all-hotels" aria-pressed="true">Все отели</button>
+          <button type="button" id="favorites-filter" aria-pressed="false">Избранное · 0</button>
         </div>
         <label class="sort-wrap"><span class="sr-only">Сортировка туров</span><select id="sort">
           <option value="featured">По подборке</option>
-          <option value="low">Сначала дешевле</option>
+          <option value="low" selected>Сначала дешевле</option>
           <option value="rating">По отзывам о питании</option>
         </select></label>
       </div>
       <div class="filter-summary">
-        <label><input id="budget" type="checkbox" checked> До 150 000 ₽</label>
+        <label><input id="budget" type="checkbox"> До 150 000 ₽</label>
         <p id="results-count" role="status" aria-live="polite"></p>
       </div>
       <div class="hotel-grid" id="catalog-grid"></div>
       <noscript><p><a class="text-link" href="https://www.onlinetours.ru/tury/oae/dubai/na-novij-god">Смотреть туры на Onlinetours</a></p></noscript>
-      <aside class="return-note" aria-label="Другие даты">
-        <div><h3>Обратно 2 января</h3><p>Studio M, завтраки, шесть ночей в отеле. Прямой flydubai с багажом 20 кг, вылет из Москвы 26 декабря вечером.</p><a class="text-link" href="https://www.onlinetours.ru/book/d6b1153ba7a520c8e68cfb1dc307394f" target="_blank" rel="noopener noreferrer">Studio M · 148 276 ₽</a></div>
-        <div><h3>Вылет 28 декабря</h3><p>Четыре ночи, обратно 1 января. У Studio M проверен рейс с двухразовым питанием. Для IntercityHotel цена из карточки.</p><a class="text-link" href="https://www.onlinetours.ru/offer_groups?group=ydHD6RuBFIUcLs9AzWVjgp9WSKUYcyeR51LIrmHKKG_x4GhrSvrWHzYONMWSvd-DwzMv5hJ-xHtA_CtgDYq1g_LK_oHIZLSMeoUjbIEhqsfWyh7oWoOnmfz6--PZYj77Nkw-Gtfb2Z--Qfjp7Rk9NXuLsqT4jb-0CQ" target="_blank" rel="noopener noreferrer">Studio M · 146 947 ₽</a></div>
-      </aside>
     </section>
 
     <section class="dinner section-space" id="dinner" aria-labelledby="dinner-title">
@@ -183,11 +179,20 @@
     </section>
   </main>
 
+  <dialog class="hotel-album" id="hotel-album" aria-labelledby="album-title">
+    <header class="album-heading">
+      <h2 id="album-title"></h2>
+      <form method="dialog"><button type="submit" class="button outlined">Закрыть</button></form>
+    </header>
+    <div class="album-info" id="album-sources"></div>
+    <div id="album-content"></div>
+  </dialog>
+
   <footer class="footer">
     <div class="frame">
       <div class="footer-top"><a href="#top" class="brand">Dubai<span>2027</span></a><a class="text-link" href="#top">Наверх</a></div>
       <p>Цены и наличие проверены 21 ноября 2026. Актуальную цену, рейсы и обязательные сборы показывают продавцы туров.</p>
-      <details><summary>Источники и фото</summary><p>Туры и оценки питания — Onlinetours. Фото отелей — Skyscanner, Accor, Join UP!, Coral Travel, IHG, H Rewards и гостиничные каталоги. Фото города — Engel &amp; Völkers и Travellero. Изображение новогоднего шоу — Emaar. Фото ресторана — Mama Zonia.</p></details>
+      <details><summary>Источники и фото</summary><p>Туры и оценки питания — Onlinetours. Полные галереи — Onlinetours, фото отдельных категорий — официальные сайты отелей. Обложки — Skyscanner, Accor, Join UP!, Coral Travel, IHG, H Rewards и гостиничные каталоги. Фото города — Engel &amp; Völkers и Travellero. Изображение новогоднего шоу — Emaar. Фото ресторана — Mama Zonia.</p></details>
     </div>
   </footer>
 </body>
