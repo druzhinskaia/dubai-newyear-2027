@@ -36,10 +36,9 @@ function createHotelMap(hotels) {
   }
 
   if (window.L?.map && window.L?.markerClusterGroup) {
-    map = L.map(panel, { scrollWheelZoom: false, minZoom: 9, maxZoom: 19 });
+    map = L.map(panel, { attributionControl: false, scrollWheelZoom: false, minZoom: 9, maxZoom: 19 });
     map.setView([25.205, 55.287], 11);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 19
     }).addTo(map);
 

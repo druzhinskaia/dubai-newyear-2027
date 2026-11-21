@@ -250,6 +250,8 @@ section[id] { scroll-margin-top: 1rem; }
 .hotel-map-heading p, .hotel-map-heading > span, .meal-caption { color: var(--muted); font-size: .875rem; }
 .hotel-map-heading > span { flex-shrink: 0; font-weight: 700; }
 #hotel-map { isolation: isolate; height: clamp(16rem, 32vw, 22rem); background: #dedad1; }
+.hotel-map-credit { margin: .25rem 0 0; text-align: right; color: var(--muted); font-size: .75rem; }
+#hotel-map[hidden] + .hotel-map-credit { display: none; }
 .hotel-map-controls { display: flex; flex-wrap: wrap; gap: .55rem; align-items: stretch; margin-top: .8rem; }
 .hotel-map-controls .sort-wrap { flex: 1 1 13rem; max-width: 22rem; min-width: 0; }
 .hotel-map-controls select { width: 100%; min-height: 2.85rem; text-overflow: ellipsis; }
