@@ -1,0 +1,80 @@
+.inside-links {
+  display: flex;
+  gap: 5px 22px;
+  flex-wrap: wrap;
+  padding-block: 11px;
+  border-bottom: 1px solid var(--rule);
+}
+.inside-links a {
+  padding-block: 5px;
+  color: var(--brown);
+  font-size: .9rem;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+.day-content { padding-top: 25px; }
+.scenario-set, .flight-planner {
+  padding: clamp(16px,2.6vw,28px);
+  margin-bottom: 34px;
+  border: 1px solid var(--rule);
+  background: var(--ivory);
+}
+.scenario-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 9px 16px; }
+.scenario-heading h2, .flight-planner h2 { margin-bottom: 9px; font-size: clamp(2rem,3.3vw,3.5rem); }
+.variant-options { display: flex; flex-wrap: wrap; gap: 7px; margin: 12px 0; }
+.scenario-button { font-size: .85rem; padding: 6px 11px; }
+.scenario-panel { background: var(--sand); padding: 14px 15px; border-left: 2px solid var(--gold); }
+.scenario-panel h3 { font-size: clamp(1.65rem,2.5vw,2.25rem); margin-bottom: 6px; }
+.scenario-panel p { color: var(--muted); }
+.scenario-panel ol { padding-left: 22px; margin: 10px 0 7px; }
+.scenario-panel li { padding-block: 2px; }
+.expanded-schedule .section-heading { margin-bottom: 12px; }
+.schedule-controls { display: flex; align-items: center; justify-content: flex-end; gap: 7px; flex-wrap: wrap; }
+.progress-text { white-space: nowrap; }
+.compact-toggle { white-space: nowrap; }
+.schedule-intro { padding-bottom: 16px; color: var(--muted); }
+.detail-stop { grid-template-columns: minmax(92px,.48fr) minmax(0,1.7fr) auto; }
+.detail-stop .stop-time { line-height: 1.4; }
+.quick-read .entry-detail { display: none; }
+.price-selection-hint { margin: 8px 0 0; }
+.fieldnotes { margin: 35px 0 10px; }
+.fieldnotes > h2 { margin-bottom: 12px; }
+.trip-detail { border-top: 1px solid var(--rule); padding: 10px 0; color: var(--muted); }
+.trip-detail summary { color: var(--ink); cursor: pointer; font-weight: 500; }
+.trip-detail p { margin: 6px 0 0 16px; }
+.planner-checklist { background: var(--sand); padding: 15px; margin: 17px 0; }
+.planner-checklist h2 { font-size: 2.1rem; margin-bottom: 8px; }
+.prep-item { display: flex; align-items: flex-start; gap: 10px; padding-block: 6px; cursor: pointer; }
+.prep-item input { width: 19px; height: 19px; accent-color: var(--brown); flex: 0 0 auto; margin: 3px 0 0; }
+.prep-item input:checked + span { color: var(--muted); }
+.planner-notes label { display: block; font-family: var(--serif); font-size: 2.05rem; font-weight: 600; line-height: 1; margin-bottom: 8px; }
+.planner-notes textarea { display: block; width: 100%; background: var(--ivory); color: var(--ink); border: 1px solid var(--rule); padding: 9px 11px; border-radius: 0; font: inherit; resize: vertical; }
+.planner-notes small { color: var(--muted); font-size: .84rem; display: block; min-height: 1.5em; margin-top: 4px; }
+.flight-planner p { color: var(--muted); margin-bottom: 10px; }
+.flight-fields { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 9px; margin: 11px 0; }
+.flight-fields label { font-size: .84rem; color: var(--brown); }
+.flight-fields input { display: block; width: 100%; min-width: 0; padding: 6px; margin-top: 3px; min-height: 39px; border: 1px solid var(--rule); border-radius: 0; background: #fffdf8; }
+.flight-planner output { display: block; color: var(--brown); margin-top: 8px; }
+.flight-planner output:empty { display: none; }
+@media (max-width: 760px) {
+  .inside-links { gap: 2px 13px; }
+  .inside-links a { font-size: .84rem; }
+  .scenario-set, .flight-planner { margin-bottom: 25px; }
+  .scenario-heading h2 { margin-bottom: 0; }
+  .scenario-panel { padding: 11px 12px; }
+  .fieldnotes { margin-top: 23px; }
+}
+@media (max-width: 510px) {
+  .detail-stop { grid-template-columns: minmax(0,1fr) auto; gap: 5px 10px; }
+  .detail-stop .stop-time { grid-column: 1/-1; }
+  .flight-fields { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .schedule-controls { gap: 4px; }
+  .compact-toggle { min-height: 36px; padding: 4px 8px; font-size: .8rem; }
+}
+@media print {
+  .day-nav,.mast,.utility,.inside-links,.compact-toggle,.scenario-heading button,.variant-options,.day-turn,.site-footer,.planner-notes { display:none; }
+  .scenario-panel,.aside-box { border-color:#aaa; }
+  .quick-read .entry-detail { display:block; }
+  .day-content { display:block; }
+  .detail-stop,.scenario-set,.price-row { break-inside:avoid; }
+}
