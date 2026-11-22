@@ -1,0 +1,40 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2ebdf"><meta name="description" content="Калькулятор на двоих и конвертер дирхамов в рубли."><title>Бюджет поездки · Дубай</title>
+    <link rel="icon" href="assets/hero-2.webp" type="image/webp"><link rel="stylesheet" href="assets/fonts.css">
+    <link rel="stylesheet" href="assets/site.css"><script src="assets/catalog.js" defer></script><script src="assets/site.js" defer></script></head>
+    <body data-root="" class="budget-page"><a class="skip-link" href="#main">К содержанию</a><div class="utility"><div class="shell utility-inner"><span>23 декабря 2026 — 3 января 2027</span><span>Дубай, ОАЭ · UTC+4</span></div></div>
+    <header class="mast"><div class="shell mast-inner">
+      <a href="index.html" class="wordmark" aria-label="Дубай, главная">Дубай<span>ЗИМНИЙ МАРШРУТ</span></a>
+      <nav aria-label="Основное меню"><a href="index.html#route">Маршрут</a><a href="days/31-dec.html">Новый год</a><a href="ideas.html">За городом</a></nav>
+      <div class="mast-actions"><a class="saved-link" href="index.html#saved"><span aria-hidden="true">♡</span><span class="saved-label">Избранное</span><span data-fav-count hidden></span></a><a class="budget-link" href="budget.html" aria-current="page">Бюджет</a></div>
+    </div></header>
+      <main id="main" class="shell subpage"><section class="sub-intro"><span class="kicker">БИЛЕТЫ И РАСХОДЫ</span><h1>Бюджет поездки</h1>
+      <p>Отмечайте расходы в расписании. Калькулятор умножит билеты на число гостей, а такси и сбор за номер посчитает один раз.</p></section>
+      <div class="budget-grid">
+      <section class="budget-settings aside-box" id="rate"><h2>Курс и гости</h2>
+        <form id="settings-form">
+          <label for="rate-input">Рублей за 1 AED</label><input type="text" id="rate-input" inputmode="decimal" value="22,3801" required maxlength="12" aria-describedby="rate-hint">
+          <p class="muted" id="rate-hint">Ориентир ЦБ РФ от 21.11.2026. Можете ввести курс своего банка или обменника. <a class="text-link" href="https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&amp;UniDbQuery.To=21.11.2026" target="_blank" rel="noopener noreferrer">Проверить курс</a></p>
+          <fieldset class="party"><legend>Сколько гостей</legend><label><input type="radio" name="party" value="1"><span>Один</span></label><label><input type="radio" name="party" value="2" checked><span>Двое</span></label></fieldset>
+          <div class="form-actions"><button type="submit" class="button button-dark">Применить</button><button type="button" class="text-button" id="reset-rate">Вернуть курс ЦБ</button></div>
+          <p id="rate-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+        <div class="calculator"><label for="amount">Конвертер · сумма в AED</label><div><input id="amount" inputmode="decimal" type="text" value="100"><output id="conversion" for="amount">2 238 ₽</output></div></div>
+      </section>
+      <section class="aside-box budget-results" aria-labelledby="summary-title"><h2 id="summary-title">Выбранные расходы</h2>
+        <div class="budget-grand" id="budget-total" aria-live="polite">0 AED · 0 ₽</div>
+        <p class="muted">Часть билетов для основных точек уже отмечена. Обеды, транспорт и варианты с неуточнённой ценой можно учитывать отдельно.</p>
+        <div class="budget-list" id="budget-list"></div>
+        <p class="muted">Сумма ориентировочная. Она включает только выбранные пункты. Диапазоны складываются по нижней и верхней границе.</p>
+        <div class="budget-actions"><a class="button button-dark" href="index.html#route">К маршруту</a><button type="button" id="clear-budget" class="text-button">Снять все отметки</button></div>
+      </section></div></main><footer class="site-footer"><div class="shell footer-content">
+        <a class="wordmark" href="index.html">Дубай<span>ЗИМНИЙ МАРШРУТ</span></a>
+        <p>Проверка данных · 23.11.2026<br>Цены в рублях пересчитываются по курсу, выбранному на сайте.</p>
+        <div><a class="footer-link" href="index.html#route">Все дни</a><a class="footer-link" href="budget.html">Бюджет</a><a class="footer-link" href="https://www.cbr.ru/currency_base/daily/?UniDbQuery.Posted=True&amp;UniDbQuery.To=21.11.2026" target="_blank" rel="noopener noreferrer">Курс ЦБ</a></div>
+      </div></footer>
+      <dialog id="lightbox" class="lightbox" aria-label="Фотография"><div class="lightbox-inner">
+        <button type="button" class="lb-close" aria-label="Закрыть фотографию">×</button>
+        <button type="button" class="lb-prev" aria-label="Предыдущая фотография">Назад</button>
+        <div><img id="lightbox-photo" alt=""><div class="lb-caption"><span id="lightbox-caption"></span><a id="lightbox-source" target="_blank" rel="noopener noreferrer">Источник фото</a></div></div>
+        <button type="button" class="lb-next" aria-label="Следующая фотография">Далее</button>
+      </div></dialog><div id="toast" class="toast" role="status" aria-live="polite"></div></body></html>
